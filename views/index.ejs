@@ -1,0 +1,64 @@
+
+<%- include('partials/header') %> 
+
+<div class="ui main text container">
+    <div class="ui huge header">
+        RESTful Blog App
+        <div class="ui top attacheted segment">
+            <div class="ui divided items">
+                <% blogsList.forEach(element => {%>
+                    <div class="item">
+                        <div class="image">
+                            <img  src="<%= element.image %>" alt="">
+                        </div>
+                        <div class="content">
+                            <a class="header" href="/blogs/<%= element.id %>">    <%= element.title %></a>
+                            <div class="meta">
+                                <span><%= element.created.toDateString() %></span>
+                            </div>
+                            <div class="description">
+                                <% if (element.body.length>50) {%> 
+                                    <p><%= element.body.substring(0,50)%>...</p>
+                                    <a class="ui basic violet button" href="/blogs/<%= element.id %> ">Read More<i class="right chevron icon"></i> </a>
+                                    <%} else {%> 
+                                        <%= element.body%>
+                                        <%} %> 
+                            </div>
+                            <div class="extra">
+                                
+                                                
+                            </div>
+                        </div>
+                        
+                 
+                <p> </p>
+                
+                    </div>
+                
+                
+                <p><%= //element.id %></p>
+                <%}); %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %> 

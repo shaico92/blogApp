@@ -1,0 +1,25 @@
+i.icon{
+	font-size: 2em;
+}
+
+.extra i{
+	font-size: small;
+}
+.extraui.basic.violet.button{
+	float: left;
+}
+body{
+	margin-top: 7em;
+}
+
+#showform{
+	display: inline-block;
+}
+
+.description p{
+	word-wrap: break-word;
+}
+/* img{
+	width: 60%;
+	height: auto;
+} */
