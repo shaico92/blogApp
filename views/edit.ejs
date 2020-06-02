@@ -8,7 +8,7 @@
                 Title
 
             </label>
-            <input type="text" name="blog[title]" value="<%= foundBlog.title %>" placeholder="title">
+            <input type="text" maxlength="24" name="blog[title]" value="<%= foundBlog.title %>" placeholder="title">
             
         </div>
         <div class="field">
@@ -23,10 +23,7 @@
             <label>
                 Blog Content
             </label>
-            <textarea name="blog[body]" placeholder="blog post goes here" cols="30" rows="10">
-                <%= foundBlog.body %> 
-
-            </textarea>
+            <textarea name="blog[body]" placeholder="blog post goes here" cols="30" rows="10"><%=foundBlog.body%></textarea>
             
         </div>
       

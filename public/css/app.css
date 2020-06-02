@@ -16,9 +16,13 @@ body{
 	display: inline-block;
 }
 
-.description p{
-	word-wrap: break-word;
-}
+	.description p{
+		word-wrap: break-word;
+	}
+
+	.header{
+		word-wrap: break-word;
+	}
 /* img{
 	width: 60%;
 	height: auto;
