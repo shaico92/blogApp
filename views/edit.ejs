@@ -8,7 +8,7 @@
                 Title
 
             </label>
-            <input type="text" maxlength="24" name="blog[title]" value="<%= foundBlog.title %>" placeholder="title">
+            <input id="title" type="text"  name="blog[title]" value="<%= foundBlog.title %>" placeholder="title">
             
         </div>
         <div class="field">
@@ -32,4 +32,7 @@
             
     </form>
 </div>
+
+
+<script src="/js/app.js"></script>
 <%- include('partials/footer') %> 

@@ -2,8 +2,12 @@ var express = require('express');
 var router = express.Router();
 var Blog = require('../models/blog');
 
+
+
+
+// u = 'file:///c:/Users/myname/test.swf'
 router.get('/',(req,res)=>{
-      
+    console.log();
         
     res.redirect('/blogs');
 })
